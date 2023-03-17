@@ -1,0 +1,144 @@
+<!-- Emirssyah Putra (120140169)-->
+<!-- PAM-Tugas 1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+    <style>
+    @media (max-width: 280px) {
+    * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+}
+    @media (max-height: 653px) {
+     * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+}
+    .judul {
+        background-color: aqua;
+    }
+    .body {
+        background-color:darkturquoise;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Tugas 1 </h2>
+    <table id="nilai" border="1" style="border: 1px solid">
+        <tr class="judul">
+            <th>NO</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Nilai</th>
+            <th>Huruf Mutu</th>
+        </tr>
+        <tr class="body">
+            <td>1.</td>
+            <td>Haikal</td>
+            <td>120140168</td>
+            <td>70</td>
+            <td id="1"></td>
+        </tr>
+        <tr class="body">
+            <td>2.</td>
+            <td>Muhammad Haikal Fauzananda</td>
+            <td>120140169</td>
+            <td>90</td>
+            <td id="2"></td>
+        </tr>
+        <tr class="body">
+            <td>3.</td>
+            <td>Merysah</td>
+            <td>120140180</td>
+            <td>40</td>
+            <td id="3"></td>
+        </tr>
+        <tr class="body">
+            <td>4.</td>
+            <td>Pandu Wiratama</td>
+            <td>120140170</td>
+            <td>55</td>
+            <td id="4"></td>
+        </tr>
+        <tr class="body">
+            <td>5.</td>
+            <td>Rizqi</td>
+            <td>120140171</td>
+            <td>45</td>
+            <td id="5"></td>
+        </tr>
+        <tr class="body">
+            <td>6.</td>
+            <td>Adli</td>
+            <td>120140190</td>
+            <td>99</td>
+            <td id="6"></td>
+        </tr>
+        <tr class="body">
+            <td>7.</td>
+            <td>Andre</td>
+            <td>120140160</td>
+            <td>5</td>
+            <td id="7"></td>
+        </tr>
+        <tr class="body">
+            <td>8.</td>
+            <td>Fitra</td>
+            <td>120140045</td>
+            <td>88</td>
+            <td id="8"></td>
+        </tr>
+        <tr class="body">
+            <td>9.</td>
+            <td>Rahma</td>
+            <td>120140195</td>
+            <td>78</td>
+            <td id="9"></td>
+        </tr>
+        <tr class="body">
+            <td>10.</td>
+            <td>Elang</td>
+            <td>120140194</td>
+            <td>87</td>
+            <td id="10"></td>
+        </tr>
+
+    </table>
+    
+<h3>Emirssyah Putra (120140169)</h3>
+</div>
+<script>
+		var tabel = document.getElementById("nilai");
+		for(var t = 1; t < tabel.rows.length; t++)
+		{
+			nilai = parseInt(tabel.rows[t].cells[3].innerHTML);
+            if( nilai > 80){
+                nmutu = "A";
+            }
+            else if( nilai > 70 ){
+                nmutu = "AB";
+            }
+            else if( nilai > 60 ){  
+                nmutu = "B";
+            }
+            else if( nilai > 50 ){
+                nmutu = "BC";
+            }else if( nilai > 40 ){
+                nmutu = "C";
+            }else if( nilai > 10 ){
+                nmutu = "D";
+            } else {
+                nmutu = "E";		
+            }
+            document.getElementById(t).innerHTML = nmutu;
+		}
+</script>
+</body>
+</html>
