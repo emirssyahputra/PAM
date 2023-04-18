@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider } from "react-redux";
-import store from "./src/Redux-Saga/store";
+import store from "./page/Redux-Saga/store";
 import Home from './page/Home';
 import Penerbangan from './page/Penerbangan';
 
